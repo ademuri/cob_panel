@@ -605,4 +605,48 @@ $EndComp
 Connection ~ 1650 1150
 Wire Wire Line
 	1650 1150 1750 1150
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DBB75AD
+P 9850 3250
+F 0 "H1" H 9950 3296 50  0000 L CNN
+F 1 "MountingHole" H 9950 3205 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 9850 3250 50  0001 C CNN
+F 3 "~" H 9850 3250 50  0001 C CNN
+	1    9850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5DBB979C
+P 9850 3400
+F 0 "H2" H 9950 3446 50  0000 L CNN
+F 1 "MountingHole" H 9950 3355 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 9850 3400 50  0001 C CNN
+F 3 "~" H 9850 3400 50  0001 C CNN
+	1    9850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5DBB99C6
+P 9850 3550
+F 0 "H3" H 9950 3596 50  0000 L CNN
+F 1 "MountingHole" H 9950 3505 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 9850 3550 50  0001 C CNN
+F 3 "~" H 9850 3550 50  0001 C CNN
+	1    9850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5DBB9B70
+P 9850 3700
+F 0 "H4" H 9950 3746 50  0000 L CNN
+F 1 "MountingHole" H 9950 3655 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 9850 3700 50  0001 C CNN
+F 3 "~" H 9850 3700 50  0001 C CNN
+	1    9850 3700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
