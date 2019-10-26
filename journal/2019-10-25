@@ -1,0 +1,12 @@
+Notes on choosing driver circuit:
+- Good writeup of linear current source vs switched mode current source here: https://electronics.stackexchange.com/questions/55823/how-can-i-efficiently-drive-an-led
+-Efficiency of linear source:
+
+(assuming maximum forward voltage)
+red: 83%
+green and blue: 87%
+total average: 86%
+
+- Looking at AL8860 switching LED driver, efficiency is 89% for this case
+
+- Going to modify LED driver design for higher efficiency by halving the sense voltage from .5v to .25v. Found a .36 Ohm, 1/2W resistor, for ~695mA.
