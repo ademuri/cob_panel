@@ -10,3 +10,12 @@ total average: 86%
 - Looking at AL8860 switching LED driver, efficiency is 89% for this case
 
 - Going to modify LED driver design for higher efficiency by halving the sense voltage from .5v to .25v. Found a .36 Ohm, 1/2W resistor, for ~695mA.
+https://www.instructables.com/id/Circuits-for-using-High-Power-LED-s/
+
+
+Thermal management notes (for LED):
+Good description of how to thermal relief: https://electronics.stackexchange.com/questions/22853/can-i-include-heatsink-copper-in-a-kicad-footprint
+
+Takeaway: connect LED thermal pad to ground plane with masked vias outside of the pad.
+
+See data at: https://assets.nexperia.com/documents/application-note/AN10874.pdf
