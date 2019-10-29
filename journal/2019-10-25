@@ -1,16 +1,15 @@
 Notes on choosing driver circuit:
 - Good writeup of linear current source vs switched mode current source here: https://electronics.stackexchange.com/questions/55823/how-can-i-efficiently-drive-an-led
 -Efficiency of linear source:
+https://www.instructables.com/id/Circuits-for-using-High-Power-LED-s/
 
 (assuming maximum forward voltage)
-red: 83%
-green and blue: 87%
-total average: 86%
+red: 52%
+green and blue: 72%
+total average: 65%
 
 - Looking at AL8860 switching LED driver, efficiency is 89% for this case
-
-- Going to modify LED driver design for higher efficiency by halving the sense voltage from .5v to .25v. Found a .36 Ohm, 1/2W resistor, for ~695mA.
-https://www.instructables.com/id/Circuits-for-using-High-Power-LED-s/
+- For chosen driver, PAM2804, efficiency is ~86%
 
 
 Thermal management notes (for LED):
