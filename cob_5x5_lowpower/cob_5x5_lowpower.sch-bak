@@ -182,17 +182,6 @@ F 3 "" H 2200 2000 50  0001 C CNN
 	1    2200 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED_RGB D1
-U 1 1 5DC2FA10
-P 7000 3500
-F 0 "D1" H 7000 3997 50  0000 C CNN
-F 1 "LED_RGB" H 7000 3906 50  0000 C CNN
-F 2 "LED_SMD:LED_RGB_Getian_GT-P6PRGB4303" H 7000 3450 50  0001 C CNN
-F 3 "~" H 7000 3450 50  0001 C CNN
-	1    7000 3500
-	1    0    0    -1  
-$EndComp
 Text GLabel 3800 1850 2    50   Input ~ 0
 R_INV
 Text GLabel 4250 1950 2    50   Input ~ 0
@@ -331,14 +320,6 @@ F 3 "" H 6800 3750 50  0001 C CNN
 	1    6800 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 3300 6800 3500
-Wire Wire Line
-	6800 3500 6800 3700
-Connection ~ 6800 3500
-Wire Wire Line
-	6800 3750 6800 3700
-Connection ~ 6800 3700
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 5DC4D220
@@ -491,14 +472,23 @@ F 3 "" H 6000 1900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Homebrew:HOLE H4
-U 1 1 5DC8E487
-P 6000 2100
-F 0 "H4" H 6109 2153 60  0000 L CNN
-F 1 "HOLE" H 6109 2047 60  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6000 2100 60  0001 C CNN
-F 3 "" H 6000 2100 60  0001 C CNN
-	1    6000 2100
+L Device:LED_RGB_EP D?
+U 1 1 5DD5AA88
+P 7000 3500
+F 0 "D?" H 7000 3997 50  0000 C CNN
+F 1 "LED_RGB_EP" H 7000 3906 50  0000 C CNN
+F 2 "" H 7000 3450 50  0001 C CNN
+F 3 "~" H 7000 3450 50  0001 C CNN
+	1    7000 3500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6800 3700 6800 3750
+Wire Wire Line
+	6800 3700 6800 3500
+Connection ~ 6800 3700
+Wire Wire Line
+	6800 3500 6800 3300
+Connection ~ 6800 3500
+NoConn ~ 7000 4000
 $EndSCHEMATC
