@@ -1,0 +1,455 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5DB38CA1
+P 1250 1450
+F 0 "J1" H 1168 1125 50  0000 C CNN
+F 1 "Conn_01x03" H 1168 1216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1250 1450 50  0001 C CNN
+F 3 "~" H 1250 1450 50  0001 C CNN
+	1    1250 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DB39B74
+P 1500 1600
+F 0 "#PWR0101" H 1500 1350 50  0001 C CNN
+F 1 "GND" H 1505 1427 50  0000 C CNN
+F 2 "" H 1500 1600 50  0001 C CNN
+F 3 "" H 1500 1600 50  0001 C CNN
+	1    1500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1550 1500 1550
+Wire Wire Line
+	1500 1550 1500 1600
+Text GLabel 1450 1450 2    50   Input ~ 0
+SIGNAL_IN
+Text Notes 1500 950  0    50   ~ 0
+Input
+$Comp
+L power:GND #PWR0106
+U 1 1 5DB47785
+P 6650 1600
+F 0 "#PWR0106" H 6650 1350 50  0001 C CNN
+F 1 "GND" H 6655 1427 50  0000 C CNN
+F 2 "" H 6650 1600 50  0001 C CNN
+F 3 "" H 6650 1600 50  0001 C CNN
+	1    6650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5DB46FE3
+P 6900 1450
+F 0 "J2" H 6818 1125 50  0000 C CNN
+F 1 "Conn_01x03" H 7100 1650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6900 1450 50  0001 C CNN
+F 3 "~" H 6900 1450 50  0001 C CNN
+	1    6900 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 1450 0    50   Input ~ 0
+SIGNAL_OUT
+Wire Wire Line
+	6700 1550 6650 1550
+Wire Wire Line
+	6650 1550 6650 1600
+Text Notes 6550 1100 0    50   ~ 0
+Output
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DBB75AD
+P 10350 650
+F 0 "H1" H 10450 696 50  0000 L CNN
+F 1 "MountingHole" H 10450 605 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 10350 650 50  0001 C CNN
+F 3 "~" H 10350 650 50  0001 C CNN
+	1    10350 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5DBB979C
+P 10350 800
+F 0 "H2" H 10450 846 50  0000 L CNN
+F 1 "MountingHole" H 10450 755 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 10350 800 50  0001 C CNN
+F 3 "~" H 10350 800 50  0001 C CNN
+	1    10350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5DBB99C6
+P 10350 950
+F 0 "H3" H 10450 996 50  0000 L CNN
+F 1 "MountingHole" H 10450 905 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 10350 950 50  0001 C CNN
+F 3 "~" H 10350 950 50  0001 C CNN
+	1    10350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5DBB9B70
+P 10350 1100
+F 0 "H4" H 10450 1146 50  0000 L CNN
+F 1 "MountingHole" H 10450 1055 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 10350 1100 50  0001 C CNN
+F 3 "~" H 10350 1100 50  0001 C CNN
+	1    10350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Homebrew:5V_REG_AP7370-50W5-7 U1
+U 1 1 5DC5A82A
+P 3950 1250
+F 0 "U1" H 3975 1515 50  0000 C CNN
+F 1 "5V_REG_AP7370-50W5-7" H 3950 1650 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3950 1800 50  0001 C CNN
+F 3 "" H 3950 1800 50  0001 C CNN
+	1    3950 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0119
+U 1 1 5DC845C9
+P 3400 1200
+F 0 "#PWR0119" H 3400 1050 50  0001 C CNN
+F 1 "+12V" H 3415 1373 50  0000 C CNN
+F 2 "" H 3400 1200 50  0001 C CNN
+F 3 "" H 3400 1200 50  0001 C CNN
+	1    3400 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1250 3400 1250
+Wire Wire Line
+	3400 1250 3400 1200
+$Comp
+L power:GND #PWR0120
+U 1 1 5DC871FC
+P 3950 1750
+F 0 "#PWR0120" H 3950 1500 50  0001 C CNN
+F 1 "GND" H 3955 1577 50  0000 C CNN
+F 2 "" H 3950 1750 50  0001 C CNN
+F 3 "" H 3950 1750 50  0001 C CNN
+	1    3950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5DC8754E
+P 4550 1450
+F 0 "C6" H 4665 1496 50  0000 L CNN
+F 1 "10uF" H 4665 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4588 1300 50  0001 C CNN
+F 3 "~" H 4550 1450 50  0001 C CNN
+	1    4550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1250 4550 1250
+Wire Wire Line
+	4550 1250 4550 1300
+Wire Wire Line
+	4550 1600 4550 1750
+Wire Wire Line
+	4550 1750 3950 1750
+Connection ~ 3950 1750
+$Comp
+L power:+5V #PWR0121
+U 1 1 5DC8EEA4
+P 4550 1200
+F 0 "#PWR0121" H 4550 1050 50  0001 C CNN
+F 1 "+5V" H 4565 1373 50  0000 C CNN
+F 2 "" H 4550 1200 50  0001 C CNN
+F 3 "" H 4550 1200 50  0001 C CNN
+	1    4550 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1250 4550 1200
+Connection ~ 4550 1250
+$Sheet
+S 2500 3050 600  500 
+U 5DE8C448
+F0 "single_led" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I R 3100 3450 50 
+F3 "SIGNAL_IN" I L 2500 3150 50 
+$EndSheet
+$Sheet
+S 3400 3050 600  500 
+U 5DF187B8
+F0 "sheet5DF187B4" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I R 4000 3450 50 
+F3 "SIGNAL_IN" I L 3400 3150 50 
+$EndSheet
+$Sheet
+S 4400 3050 600  500 
+U 5DF1A17B
+F0 "sheet5DF1A177" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I R 5000 3450 50 
+F3 "SIGNAL_IN" I L 4400 3150 50 
+$EndSheet
+$Sheet
+S 4450 3950 600  500 
+U 5DF1A352
+F0 "sheet5DF1A34E" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I L 4450 4050 50 
+F3 "SIGNAL_IN" I R 5050 4350 50 
+$EndSheet
+$Sheet
+S 3500 3950 600  500 
+U 5DF1A514
+F0 "sheet5DF1A510" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I L 3500 4050 50 
+F3 "SIGNAL_IN" I R 4100 4350 50 
+$EndSheet
+$Sheet
+S 2550 3950 600  500 
+U 5DF1FB9C
+F0 "sheet5DF1FB98" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I L 2550 4050 50 
+F3 "SIGNAL_IN" I R 3150 4350 50 
+$EndSheet
+$Sheet
+S 2550 4750 600  500 
+U 5DF1FDD9
+F0 "sheet5DF1FDD5" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I R 3150 5150 50 
+F3 "SIGNAL_IN" I L 2550 4850 50 
+$EndSheet
+$Sheet
+S 3500 4750 600  500 
+U 5DF1FFFB
+F0 "sheet5DF1FFF7" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I R 4100 5150 50 
+F3 "SIGNAL_IN" I L 3500 4850 50 
+$EndSheet
+$Sheet
+S 4500 4750 600  500 
+U 5DF20223
+F0 "sheet5DF2021F" 50
+F1 "single_led.sch" 50
+F2 "SIGNAL_OUT" I R 5100 5150 50 
+F3 "SIGNAL_IN" I L 4500 4850 50 
+$EndSheet
+NoConn ~ 1450 1350
+NoConn ~ 6700 1350
+Text GLabel 2500 3150 0    50   Input ~ 0
+SIGNAL_IN
+Text GLabel 5100 5150 2    50   Input ~ 0
+SIGNAL_OUT
+Wire Wire Line
+	3100 3450 3250 3450
+Wire Wire Line
+	3250 3450 3250 3150
+Wire Wire Line
+	3250 3150 3400 3150
+Wire Wire Line
+	4000 3450 4200 3450
+Wire Wire Line
+	4200 3450 4200 3150
+Wire Wire Line
+	4200 3150 4400 3150
+Wire Wire Line
+	5000 3450 5250 3450
+Wire Wire Line
+	5250 3450 5250 4350
+Wire Wire Line
+	5250 4350 5050 4350
+Wire Wire Line
+	4450 4050 4300 4050
+Wire Wire Line
+	4300 4050 4300 4350
+Wire Wire Line
+	4300 4350 4100 4350
+Wire Wire Line
+	3500 4050 3350 4050
+Wire Wire Line
+	3350 4050 3350 4350
+Wire Wire Line
+	3350 4350 3150 4350
+Wire Wire Line
+	2550 4050 2450 4050
+Wire Wire Line
+	2450 4050 2450 4850
+Wire Wire Line
+	2450 4850 2550 4850
+Wire Wire Line
+	3150 5150 3350 5150
+Wire Wire Line
+	3350 5150 3350 4850
+Wire Wire Line
+	3350 4850 3500 4850
+Wire Wire Line
+	4100 5150 4300 5150
+Wire Wire Line
+	4300 5150 4300 4850
+Wire Wire Line
+	4300 4850 4500 4850
+$Comp
+L Homebrew:Anderson_two_redblack_src J3
+U 1 1 5DF2893F
+P 1450 2350
+F 0 "J3" H 1342 2647 60  0000 C CNN
+F 1 "Anderson_two_redblack" H 1800 2550 60  0000 C CNN
+F 2 "" H 1400 2200 60  0001 C CNN
+F 3 "" H 1400 2200 60  0001 C CNN
+	1    1450 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Homebrew:Anderson_two_redblack_sink J4
+U 1 1 5DF28FFA
+P 6850 2400
+F 0 "J4" H 7028 2458 60  0000 L CNN
+F 1 "Anderson_two_redblack" H 7028 2352 60  0000 L CNN
+F 2 "" H 6800 2250 60  0001 C CNN
+F 3 "" H 6800 2250 60  0001 C CNN
+	1    6850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DF29737
+P 1800 2400
+F 0 "#PWR02" H 1800 2150 50  0001 C CNN
+F 1 "GND" H 1805 2227 50  0000 C CNN
+F 2 "" H 1800 2400 50  0001 C CNN
+F 3 "" H 1800 2400 50  0001 C CNN
+	1    1800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5DF29D89
+P 1800 2300
+F 0 "#PWR01" H 1800 2150 50  0001 C CNN
+F 1 "+12V" H 1815 2473 50  0000 C CNN
+F 2 "" H 1800 2300 50  0001 C CNN
+F 3 "" H 1800 2300 50  0001 C CNN
+	1    1800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DF2A265
+P 2150 2450
+F 0 "C1" H 2265 2496 50  0000 L CNN
+F 1 "10uF" H 2265 2405 50  0000 L CNN
+F 2 "" H 2188 2300 50  0001 C CNN
+F 3 "~" H 2150 2450 50  0001 C CNN
+	1    2150 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2300 2150 2300
+Connection ~ 1800 2300
+$Comp
+L power:GND #PWR03
+U 1 1 5DF2AFF9
+P 2150 2600
+F 0 "#PWR03" H 2150 2350 50  0001 C CNN
+F 1 "GND" H 2155 2427 50  0000 C CNN
+F 2 "" H 2150 2600 50  0001 C CNN
+F 3 "" H 2150 2600 50  0001 C CNN
+	1    2150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR05
+U 1 1 5DF2CA40
+P 6500 2350
+F 0 "#PWR05" H 6500 2200 50  0001 C CNN
+F 1 "+12V" H 6515 2523 50  0000 C CNN
+F 2 "" H 6500 2350 50  0001 C CNN
+F 3 "" H 6500 2350 50  0001 C CNN
+	1    6500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5DF2CE82
+P 6500 2450
+F 0 "#PWR06" H 6500 2200 50  0001 C CNN
+F 1 "GND" H 6505 2277 50  0000 C CNN
+F 2 "" H 6500 2450 50  0001 C CNN
+F 3 "" H 6500 2450 50  0001 C CNN
+	1    6500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DF2D1F6
+P 6000 2500
+F 0 "C2" H 6115 2546 50  0000 L CNN
+F 1 "10uF" H 6115 2455 50  0000 L CNN
+F 2 "" H 6038 2350 50  0001 C CNN
+F 3 "~" H 6000 2500 50  0001 C CNN
+	1    6000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5DF2D824
+P 6000 2650
+F 0 "#PWR04" H 6000 2400 50  0001 C CNN
+F 1 "GND" H 6005 2477 50  0000 C CNN
+F 2 "" H 6000 2650 50  0001 C CNN
+F 3 "" H 6000 2650 50  0001 C CNN
+	1    6000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2350 6000 2350
+Connection ~ 6500 2350
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5DF3B8FC
+P 10350 1250
+F 0 "H5" H 10450 1296 50  0000 L CNN
+F 1 "MountingHole" H 10450 1205 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 10350 1250 50  0001 C CNN
+F 3 "~" H 10350 1250 50  0001 C CNN
+	1    10350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5DF3B902
+P 10350 1400
+F 0 "H6" H 10450 1446 50  0000 L CNN
+F 1 "MountingHole" H 10450 1355 50  0000 L CNN
+F 2 "homebrew:MountingHole_2.7mm_M2.5" H 10350 1400 50  0001 C CNN
+F 3 "~" H 10350 1400 50  0001 C CNN
+	1    10350 1400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
