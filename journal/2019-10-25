@@ -18,3 +18,23 @@ Good description of how to thermal relief: https://electronics.stackexchange.com
 Takeaway: connect LED thermal pad to ground plane with masked vias outside of the pad.
 
 See data at: https://assets.nexperia.com/documents/application-note/AN10874.pdf
+
+More data:
+http://www.brysonics.com/pcb-thermal-resistance-some-unexpected-results/
+http://www.ti.com/lit/an/snva419c/snva419c.pdf
+
+
+TI recommends putting thermal vias directly in the pad:
+http://www.ti.com/lit/an/sloa120/sloa120.pdf
+
+"If thin PCB boards or vias larger than 0,3 mm are used, designers may use only external vias to prevent
+solder loss and protrusions (see Figure 6). Designers should note that this might reduce thermal
+performance significantly and should be evaluated on their PCBs"
+
+Possible option for thermal vias:
+https://www.circuitsassembly.com/ca/magazine/25770-btc-design-1603.html
+
+"IPC-70932 Section 6.1.5.3 gives the following guidance for voiding within thermal pads: “The presence of small voids in the thermal pad region is not likely to result in degradation of thermal and electrical performance, nor impact the reliability of perimeter I/O solder joints.”'
+
+Via spacing guidelines:
+https://www.allaboutcircuits.com/technical-articles/thermal-design-with-exposed-pad-packages/
