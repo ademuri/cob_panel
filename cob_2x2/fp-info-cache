@@ -1,4 +1,4 @@
-18605678376188652
+18608834166584652
 6N137
 DIP762W50P254L977H451Q8
 
@@ -82103,6 +82103,13 @@ HOLE_3.26MM_SUPPORTED
 8
 0
 homebrew
+HOLE_5MM_#8
+
+
+0
+9
+0
+homebrew
 HOLE_M4
 
 
@@ -82122,7 +82129,14 @@ https://www.gme.sk/img/cache/doc/518/177/vykonova-led-getian-gt-p6prgb4303-datas
 LED RGB 
 0
 7
-7
+6
+homebrew
+LS_A67K-J1K2-1-Z_SIDE-FIRING_LED
+
+
+0
+2
+2
 homebrew
 MountingHole_2.7mm_M2.5
 Mounting Hole 2.7mm, M2.5

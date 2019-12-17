@@ -1,0 +1,11 @@
+Impedance with ws2811 signals:
+
+Original post on impedance matching:
+https://forums.adafruit.com/viewtopic.php?t=51153
+
+Example build of long line drivers (uses rs232):
+https://blog.adafruit.com/2015/04/15/neopixels-at-a-distance-line-drivers-and-you/
+
+Another build using differential drive:
+https://www.teknynja.com/2014/02/driving-ws2812neopixels-rgb-leds-over.html?m=1
+
