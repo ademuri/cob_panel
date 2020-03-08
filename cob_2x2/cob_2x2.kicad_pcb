@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~84~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.2)
     (user_trace_width 0.5)
     (user_trace_width 0.75)
@@ -69,7 +69,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFBFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x310fc_ffffffff)
       (usegerberextensions false)
@@ -3399,6 +3399,11 @@
       (net 1 GND))
     (pad 1 thru_hole oval (at -3.95 0 90) (size 5.93 1.97) (drill oval 5.23 1.27) (layers *.Cu *.Mask)
       (net 43 12V_RAW))
+    (model :homebrew:Anderson_right_angle_x2.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5DF858A2)
